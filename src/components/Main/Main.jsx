@@ -17,9 +17,11 @@ const Main = () => {
     },[query])
 
     return (
-        <div>
-            <Search setQuery={setQuery}/>
-            <Weather data={data}/>
+        <div className={`main`}>
+            <div>
+                <Search setQuery={setQuery}/>
+                <Weather data={data}/>
+            </div>
         </div>
     )
 }
