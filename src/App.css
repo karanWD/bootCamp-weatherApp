@@ -54,18 +54,14 @@
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  width: 40vw;
   display: flex;
-  opacity: 0.7;
 }
-.search-container:hover{
-  opacity: 1;
-}
+
 .search-container input{
   padding: 15px 30px;
   border:none;
   border-radius: 10px;
-  width: 60%;
+  width: 65%;
 }
 .search-container button{
   background-color: #639bfb;
@@ -73,12 +69,23 @@
   padding:15px 30px;
   border-radius: 10px;
   color: white;
+  width: 35%;
+  cursor: pointer;
+}
+.search-container button:hover{
+  background-color: #4a87ff;
 }
 .content-container{
   background-color: white;
   padding:10px 50px;
   border-radius: 15px;
   margin-top: 10px;
+  width: 30vw;
+}
+.content-container-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .content-container h2{
   margin-bottom: 0;
@@ -86,3 +93,75 @@
 .content-container h1{
   margin: 0;
 }
+.forecast-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  overflow: auto;
+}
+.weather-content-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.weather-content-info>div{
+  color: #999;
+}
+.weather-content-info span{
+  font-weight: bold;
+  color: #444;
+}
+.weather-item{
+  text-align: center;
+ width: calc(25% - 20px);
+  margin: 10px 10px 10px 0;
+}
+.weather-item:hover{
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+.weather-item-temp{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.weather-item h4{
+  margin: 0;
+}
+.weather-item>span{
+  color: #999;
+  font-size: 14px;
+}
+.high-temp{
+  color: #ff4141;
+}
+.low-temp{
+  color: #4a87ff;
+}
+.content-container-title-temp{
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .content-container{
+    width: 70vw;
+  }
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+
